@@ -1,0 +1,17 @@
+<?php
+            
+    $nome = "Nicolas";
+    $altura = 1.85;
+    $profissao = "Escravo";
+    $cidade_nascimento = "Guarulhos";
+    $pais = "Brasil";
+    $ano_atual = 2025;
+    $idade = 19;
+    $ano_nascimento = $ano_atual - $idade;
+    
+    $texto = "Meu nome é ".$nome.", tenho ".$idade." anos e ".$altura." metros. Sou ".$profissao.", moro na cidade de ".$cidade_nascimento." que fica no ".$pais. ". Atualmente estamos em " .$ano_atual. " e nasci em ".$ano_nascimento.".";
+    
+    echo $texto
+
+    
+?>

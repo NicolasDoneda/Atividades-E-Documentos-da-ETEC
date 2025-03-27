@@ -1,0 +1,56 @@
+<?php
+   do {
+    echo "=====Calculadora de Viagem=====\n";
+   
+    echo "Digite a distância percorrida em Km: ";
+        $distancia = (float) readline();
+   
+    echo "Digite a quantidade de gasolina consumida em L: ";
+        $consumo =  (float) readline();
+   
+    echo "Digite o preço do combustível: ";
+        $preco =  (float) readline();
+       
+    echo "\n";
+       
+    echo "=====Escolha um Número===== \n";
+       
+    echo"Para calcular litros necessários digite: 1 \nPara calcular o custo total digite: 2\nPara calcular ambos digite 3:\n";
+    $escolha = (int)readline();
+    
+       
+    switch ($escolha) {
+        case 1:
+            $litrosNecessarios = $distancia/$consumo;
+            echo "A quantidade de litros necessária é de: " . number_format($litrosNecessarios,2);
+            $validacao = true;
+            break;
+            
+       
+        case 2:
+            $litrosNecessarios = $distancia/$consumo;            
+            $custoTotal = $litrosNecessarios*$preco;
+            echo "O custo total ficou de: R$" . number_format($custoTotal,2);
+            $validacao = true;
+            break;
+           
+           
+        case 3:
+            $litrosNecessarios = $distancia/$consumo;
+            $custoTotal = $litrosNecessarios*$preco;
+            echo "A quantidade de litros necessários são: " . number_format($litrosNecessarios,2)."\n";
+            echo "E o custo total de: R$" . number_format($custoTotal,2);
+            $validacao = true;
+            break;
+           
+           
+           
+        default:
+            echo "Número inválido, Tente novamente \n";
+            $validacao = false;
+            break;
+           
+      
+    }
+   } while(!$validacao);
+    ?>
