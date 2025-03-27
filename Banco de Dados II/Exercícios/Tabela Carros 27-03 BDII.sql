@@ -1,3 +1,4 @@
+SET SQL_SAFE_UPDATES = 0;
 CREATE DATABASE IF NOT EXISTS ETE_multimarcas;
 USE ETE_multimarcas;
 CREATE TABLE carros(
