@@ -40,3 +40,11 @@ ORDER BY quantidade DESC;
 
 SELECT * FROM carros WHERE cor = 'Preto';
 
+UPDATE carros SET quantidade = 5 WHERE fabricante = "Fiat";
+
+UPDATE carros SET cor = "Azul" WHERE cor = "Vermelho";
+
+UPDATE carros SET modelo ="Polo" WHERE modelo = "Gol";
+
+UPDATE 	carros SET quantidade = 8 WHERE quantidade = 1
+
