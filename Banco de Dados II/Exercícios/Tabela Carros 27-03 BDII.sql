@@ -1,8 +1,9 @@
 SET SQL_SAFE_UPDATES = 0;
+
 CREATE DATABASE IF NOT EXISTS ETE_multimarcas;
 USE ETE_multimarcas;
 CREATE TABLE carros(
-	id_carro INT AUTO_INCREMENT PRIMARY KEY,
+    id_carro INT AUTO_INCREMENT PRIMARY KEY,
     fabricante VARCHAR(50),
     modelo VARCHAR(50),
     ano_fabricacao VARCHAR(25),
