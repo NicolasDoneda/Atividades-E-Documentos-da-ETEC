@@ -1,0 +1,75 @@
+using System; 
+
+class Program{
+
+    static void Main(){
+
+        //Pedindo nome dos alunos
+        Console.WriteLine("=======Nome dos Alunos=======");
+        Console.WriteLine("Digite o nome do aluno 1: ");
+        string nome1 = Console.ReadLine(); 
+        Console.WriteLine("Digite o nome do aluno 2: ");
+        string nome2 = Console.ReadLine(); 
+        Console.WriteLine("Digite o nome do aluno 3: ");
+        string nome3 = Console.ReadLine(); 
+        Console.WriteLine("Digite o nome do aluno 4: ");
+        string nome4 = Console.ReadLine(); 
+        
+
+        //Pedindo suas notas
+        Console.WriteLine("=======Nota dos Alunos=======");
+        Console.WriteLine("Digite a nota do aluno 1");
+        double nota1 = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Digite a nota do aluno 2");
+        double nota2 = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Digite a nota do aluno 3");
+        double nota3 = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Digite a nota do aluno 4");
+        double nota4 = Convert.ToDouble(Console.ReadLine());
+
+        //Armazenando as informações nos arrays
+        string[] alunos = {nome1, nome2, nome3, nome4};
+        double[] notas = {nota1, nota2, nota3, nota4};
+
+        //descobrindo a maior e menor nota
+        double maiorNota = notas[0];
+        int indiceMaior = 0;
+        double menorNota = notas[0];
+        int indiceMenor = 0;
+
+        for (int i = 1; i < notas.Length; i++){
+
+            if (notas [i] > maiorNota){
+
+                maiorNota = notas[i];
+                indiceMaior = i;
+
+            }
+            else if(notas[i] < menorNota){
+
+                menorNota = notas[i];
+                indiceMenor = i;
+
+            }
+
+        }
+
+        //Calculando a média
+        double soma = 0;
+        
+        foreach (double nota in notas){
+            soma += nota;
+        }
+        
+        double media = soma / 4;
+        
+
+        //Output 
+        Console.WriteLine("Media das notas e o nome dos alunos:");
+        Console.WriteLine("A média dos 4 alunos foi de: "+media+ "\n O aluno com a maior nota foi: "+ alunos[indiceMaior] + " Finalizando com a nota: " +maiorNota+ "\n O aluno com a menor nota foi: " + alunos[indiceMenor]+ " Finalizando com a nota: " +menorNota);
+     
+    
+            
+
+    }
+}
