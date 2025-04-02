@@ -1,0 +1,53 @@
+class Program
+{
+    static void Main()
+    {
+        //declarando variavel legal
+        string nomeProduto = ("Desodorante");
+        int codigoProduto = 0001;
+        decimal precoProduto = 12.50m;
+        int quantidadeProduto =3;
+        bool Disponibilidade = false;
+
+
+
+        //exibindo as info
+
+        Console.WriteLine("O nome do produto é: " + nomeProduto);
+        Console.WriteLine("O número do código é: " + codigoProduto);
+        Console.WriteLine("O preço é: " + precoProduto);
+        Console.WriteLine("Quantidade em estoque: " + quantidadeProduto);
+
+        if (quantidadeProduto == 0)
+        {
+            Disponibilidade = false;
+        }
+
+        else
+        {
+            Disponibilidade = true;
+        }
+
+        if (Disponibilidade == true)
+        {
+            Console.WriteLine("Disponibilidade: Tem no galpão");
+
+        }
+
+        else
+        {
+            Console.WriteLine("Não tem nada, cabo tudo");
+
+        }
+
+    }
+
+
+}
+
+
+
+        
+        
+        
+        }

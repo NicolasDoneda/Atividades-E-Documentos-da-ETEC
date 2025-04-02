@@ -1,0 +1,14 @@
+<?php
+ 
+echo "Digite o seu peso: ";
+$num1 = (float) readline();
+
+echo "Digite a sua altura:";
+$num2 = (float) readline ();
+
+$imc = $num1 / ($num2 ** 2);
+
+$texto = round(($imc),2);
+echo "O seu imc é: $texto";
+
+?>

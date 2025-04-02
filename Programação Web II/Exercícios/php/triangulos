@@ -1,0 +1,19 @@
+<?php
+
+    echo "Digite o lado A: ";
+    $ladoA = (int) readline ();
+    echo "Digite o Lado B: ";
+    $ladoB =  (int) readline();
+    echo "Digite o Lado C: ";
+    $ladoC =  (int) readline();
+    
+    if ($ladoA == $ladoB && $ladoB == $ladoC ){
+        echo "É um triângulo equilátero";
+    }
+    elseif ($ladoA == $ladoB|| $ladoA == $ladoC||$ladoB== $ladoC){
+        echo "É um triângulo isósceles";
+    }
+    else {
+        echo "É um triângulo escaleno";
+    }
+?>
