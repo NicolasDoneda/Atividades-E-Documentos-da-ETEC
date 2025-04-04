@@ -13,12 +13,21 @@ class Program {
     Console.WriteLine("=========Consulta de carros=========");
     Console.WriteLine("Selecione uma das opções abaixo:\n 1 - SUV \n 2 - Sedan \n 3 - Hatch");
     int escolha = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Escolha o carro que deseja consultar: ");
     
     switch (escolha){
         case 1:
         foreach(string carro in suvCarro){
             Console.WriteLine(carro);
+             
         }
+        int escolhaCarro = Convert.ToInt32(Console.ReadLine())
+        if (escolhaCarro ==1){
+            
+            
+            
+        }
+        
         break;
         case 2:
         foreach(string carro in sedanCarro){
@@ -36,6 +45,7 @@ class Program {
         break;
         
     }
+    
 
 
     
