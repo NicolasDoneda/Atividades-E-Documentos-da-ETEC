@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"card0","type":"text","x":0,"y":0,"width":400,"height":200,"content":"# O que é React Native\n\nReact Native é um framework criado pelo Facebook que permite desenvolver aplicações mobile nativas usando JavaScript e React."},
+		{"id":"card1","type":"text","x":0,"y":220,"width":400,"height":200,"content":"# Por que usar React Native\n\n- Reutilização de Código\n- Comunidade ativa\n- Performance nativa\n- Desenvolvimento rápido"},
+		{"id":"card2","type":"text","x":0,"y":440,"width":400,"height":200,"content":"# Instalação - Ferramentas\n\n- Node.js: executa o JS\n- npm: instala pacotes\n- Expo CLI: simplifica o processo\n- Android Studio: testa no emulador"},
+		{"id":"card3","type":"text","x":0,"y":660,"width":400,"height":200,"content":"# Instalação - Comandos\n\nnpm install -g expo-cli\nnpx create-expo-app MeuApp\ncd MeuApp\nnpm start"},
+		{"id":"card4","type":"text","x":0,"y":880,"width":400,"height":200,"content":"# Alternativas online\n\nUse https://snack.expo.dev para testar código React Native direto no navegador."},
+		{"id":"card5","type":"text","x":0,"y":1100,"width":400,"height":200,"content":"# Estrutura do Projeto\n\nApp.js, assets/, components/, screens/, package.json"},
+		{"id":"card6","type":"text","x":0,"y":1320,"width":400,"height":200,"content":"# JSX\n\n<View>\n  <Text>Olá, mundo!</Text>\n</View>"},
+		{"id":"card7","type":"text","x":0,"y":1540,"width":400,"height":200,"content":"# Componentes\n\nComponentes são blocos reutilizáveis de UI. Exemplo:\nfunction MeuComponente() { return (<Text>Oi</Text>); }"},
+		{"id":"card8","type":"text","x":0,"y":1760,"width":400,"height":200,"content":"# Props\n\nPermitem passar valores para componentes. Exemplo:\n<Saudacao nome='Maria' />"},
+		{"id":"card9","type":"text","x":0,"y":1980,"width":400,"height":200,"content":"# State\n\nArmazena dados internos do componente. Exemplo:\nconst [count, setCount] = useState(0)"},
+		{"id":"card10","type":"text","x":0,"y":2200,"width":400,"height":200,"content":"# Estilização\n\nReact Native usa objetos JS com StyleSheet. Exemplo:\nstyle={{ fontSize: 20 }}"},
+		{"id":"card11","type":"text","x":0,"y":2420,"width":400,"height":200,"content":"# Navegação\n\nUse React Navigation para mudar entre telas. Instale:\nnpm install @react-navigation/native"},
+		{"id":"card12","type":"text","x":0,"y":2640,"width":400,"height":200,"content":"# Boas Práticas\n\n- Componentização\n- Código limpo\n- Separação por pastas\n- Teste Android/iOS"},
+		{"id":"card13","type":"text","x":0,"y":2860,"width":400,"height":200,"content":"# Recursos Extras\n\n- reactnative.dev\n- expo.dev\n- snack.expo.dev"},
+		{"id":"card14","type":"text","x":0,"y":3080,"width":400,"height":200,"content":"# App Exemplo\n\nApp com contador, botão, estilo, estado e função."}
+	],
+	"edges":[]
+}
