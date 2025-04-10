@@ -10,16 +10,19 @@ class Program
     {
 
 
+//-------------------------------------------------------------------------//
         static int SomarTresNumeros(int num1, int num2, int num3)
         {
             return num1 + num2 + num3;
 
         }
-
+//-------------------------------------------------------------------------//
         void Saudacao (string nome)
         {
             Console.WriteLine("Olá, "+ nome+ "! Bem-Vindo.");
         }
+//-------------------------------------------------------------------------//
+
         static string EhMultiploDeCinco(int numero)
         {
             if (numero % 5 == 0)
@@ -30,9 +33,8 @@ class Program
             {
                 return "Não";
             }
-
-
         }
+//-------------------------------------------------------------------------//
 
         Console.WriteLine("Digite os três números para serem somados: ");
         int n1 = Convert.ToInt32(Console.ReadLine());
