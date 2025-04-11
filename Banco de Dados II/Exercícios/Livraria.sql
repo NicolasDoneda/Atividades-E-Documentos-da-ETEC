@@ -122,3 +122,15 @@ JOIN livros l ON a.id = l.autor_id
 GROUP BY a.nome
 HAVING total_livros > 1
 ORDER BY total_livros DESC;
+
+SELECT lvr.titulo, SUM(vnd.quantidade) AS total_vendido
+FROM vendas vnd
+JOIN livros lvr ON vnd.livro_id = lvr.id
+GROUP BY lvr.titulo
+ORDER BY total_vendido DESC;
+
+SELECT l.titulo, a.nome AS autor, a.nacionalidade, l.preco AS preço
+FROM livros l
+JOIN autores a ON l.autor_id = a.id 
+WHERE a.nacionalidade = 'Britânica'
+ORDER BY l.preco DESC;
