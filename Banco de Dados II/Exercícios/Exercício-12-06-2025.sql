@@ -149,12 +149,10 @@ UPDATE Produtos
 SET Preco = Preco * 1.10
 WHERE Nome = 'Feijão Carioca';
 
--- Exercício b --
--- Primeiro excluir os produtos (se não houver restrições de venda):
+
 DELETE FROM Produtos
 WHERE FornecedorID = (SELECT FornecedorID FROM Fornecedores WHERE Nome = 'Fornecedor A');
 
--- Depois excluir o fornecedor:
 DELETE FROM Fornecedores
 WHERE Nome = 'Fornecedor A';
 
