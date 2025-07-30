@@ -1,0 +1,11 @@
+Delimiter //
+CREATE PROCEDURE PROC_LISTAR_CLIENTES ()
+BEGIN
+	SELECT * FROM clientes;
+END //
+Delimiter ;
+
+CALL PROC_LISTAR_CLIENTES ();
+
+
+	
